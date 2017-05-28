@@ -1,2 +1,9 @@
-<h1>explore</h1>
-<p>adskljflaskjdflkasjdlfkas sadjflkasjd fasdlk j flaskdjflkasjd f</p>
+<div class="col-sm-6">
+  <% @posts.each do |post| %>
+    <div class="card">
+      <div class="card-block">
+        <p><%= post.content %></p>
+      </div>
+    </div>
+  <% end %>
+</div>

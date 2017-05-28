@@ -4,5 +4,5 @@ class Post < ApplicationRecord
   validates_presence_of :user_id 
   validates :content, length: { maximum: 140 } # tweets are capped at 140 characters
 
-  default_scope -> {order(create_at: :desc) } # newest tweets /post first
+  default_scope -> {order(created_at: :desc) } # newest tweets /post first
 end
